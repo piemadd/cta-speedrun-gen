@@ -1,0 +1,21 @@
+{
+  "name": "gobbler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "downloadZips": "node ./scripts/downloadZips.js",
+    "extractZips": "node ./scripts/extractZips.js",
+    "downloadAndExtract": "npm run downloadZips && npm run extractZips",
+    "processData": "node ./scripts/processData.js",
+    "all": "npm run downloadAndExtract && npm run processData"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.7",
+    "papaparse": "^5.4.1"
+  }
+}
